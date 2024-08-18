@@ -1,0 +1,301 @@
+/****************** Geral ******************/
+
+*{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+body {
+    background: #F3F5FC;
+}
+
+header {
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+}
+
+::placeholder { 
+    color: #0A3871;
+    opacity: 1;
+}
+
+/****************** Seção Logo ******************/
+
+.logo {
+    height: 48px;
+    margin: 40px 80px 80px 40px;
+}
+
+/****************** Seção Esquerda ******************/
+
+.section-esquerda {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    padding-top: 168px;
+}
+
+#text-area {
+    flex: 1 350px;
+    border: none;
+    background: none;
+    color: #0A3871;
+    resize: none;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+#text-area:focus {
+    outline: none;
+}
+
+.informacao > svg {
+    display: inline-block;
+}
+
+.informacao > p {
+    display: inline;
+    color: #495057;
+    font-size: 12px;
+    margin-top: 22px;
+    vertical-align: middle;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 72px;
+}
+
+.btn-criptografar {
+    flex: 1;
+    height: 67px;
+    font-size: 16px;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-descriptografar {
+    height: 67px;
+    font-size: 16px;
+    flex: 1;
+    margin-left: 30px;
+    background: #F3F5FC;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+/****************** Seção Direita /******************/
+
+.section-direita {
+    display: flex;
+    flex: 200px;
+    flex-direction: column;
+    max-width: 400px;
+    position: relative;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+}
+
+.bloco-mensagem {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    background: white;
+    border-radius: 24px;
+    border: none;
+    position: relative;
+    filter: drop-shadow(0px 32px 6px rgb(0 0 0 / 0.08));
+}
+
+.resultado-positivo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+}
+
+.mensagem {
+    flex: 1;
+    color: #495057;
+    cursor: default; 
+    border: none;
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+.btn-copiar {
+    background: none;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    display: block;
+    height: 67px;
+    margin: 10px auto;
+    font-size: 16px;
+    width: 336px;
+}
+
+.resultado-negativo {
+    text-align: center;
+    padding: 32px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.imagem-boneco {
+    content: url("imagens/boneco.png"); 
+ }
+
+.resultado-negativo > b {
+    color: #343A40;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 32px;
+}
+
+.resultado-negativo > p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #495057;
+}
+
+/****************** Footer /******************/
+
+.redes-sociais-linkedin,
+.redes-sociais-github {
+    color: #0A3871;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 5px auto;
+}
+
+footer > section {
+    text-align: center;
+}
+
+footer > a,
+footer > p {
+    align-items: center;
+    color: #0A3871;
+    display: flex;
+    margin: 2%;
+    flex-direction: column;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/****************** Decodificador - Tablet e Desktop Mini /******************/
+@media (max-width: 1280px) {
+
+    main {
+        flex-direction:column;
+    }
+
+    .logo {
+        height: 50px;
+        margin: 75px 0px 0px 40px;
+        content: url(./imagens/logo-small.png);
+    }
+
+    .section-esquerda {
+        flex-direction: column;
+        padding-top: 100px;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .botoes {
+        margin-bottom: 64px;
+    }
+
+    .section-direita {
+        flex-direction: column;
+        padding-top: 0px;
+        padding-left: 40px;
+        max-width: unset;
+    }
+    
+    .imagem-boneco {
+        content: none;
+    }
+
+    .bloco-mensagem {
+        max-height: 350px;
+    }
+
+    .mensagem {
+        max-height: 200px;
+    }
+
+    .resultado-negativo > b {
+        padding-top: 0;
+    }
+    
+}
+
+/****************** Decodificador - Celular /******************/
+
+@media (max-width: 480px) {
+    
+    .logo {
+        height: 30px;
+        margin: 24px 0px 0px 16px;
+    }
+
+    .section-esquerda {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        position: relative;
+        padding-top: 56px;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .section-direita {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .botoes {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .btn-criptografar {
+        min-height: 67px;
+    }
+    
+    .btn-descriptografar {
+        margin: 0;
+        min-height: 67px;
+    }
+
+    .btn-copiar {
+        width: 100%;
+    }
+   
+}
