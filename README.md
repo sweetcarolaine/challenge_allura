@@ -1,4 +1,5 @@
 - [Projeto Decodificador](#projeto-decodificador)
+  - [Video de Apresentação](#video-de-apresentação) 
   - [Conteúdo](#conteúdo)
     - [Resumo](#resumo)
     - [Especificação](#especificação)
@@ -8,7 +9,11 @@
 
 # Projeto Decodificador
 
-Olá pessoal! Esse é o meu projeto para o Challenge Decoificador de Texto do Allura Turma 7
+Olá pessoal! Esse é o meu projeto para o Challenge Decodificador de Texto do Allura Turma 7
+
+## Video de Apresentação:
+
+![Apresentação](imagens/apresentacao.mp4)
 
 ## Conteúdo:
 
