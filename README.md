@@ -13,7 +13,7 @@ Olá pessoal! Esse é o meu projeto para o Challenge Decodificador de Texto do A
 
 ## Video de Apresentação:
 
-![Apresentação](imagens/apresentacao.mp4)
+[Apresentação](imagens/apresentacao.mp4)
 
 ## Conteúdo:
 
@@ -71,3 +71,6 @@ As substituições utilizadas para criptografar o texto são as seguintes:
 ### Contato:
 
 <a href="https://www.linkedin.com/in/thaisbezerra/" target="_blank" >![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)</a>
+
+### Badge: 
+<img src="imagens/badge.png" alt="Badge Allura" width="200" />
